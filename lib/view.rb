@@ -3,7 +3,7 @@ class View
     def display(array)
         array.each_with_index do |object, index|
             
-            if object.mark == "true"
+            if object.mark == "true" || object.mark === true
                 box = "[X]"
             else
                 box = "[ ]"
